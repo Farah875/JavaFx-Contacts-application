@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<BorderPane prefHeight="399.0" prefWidth="1059.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JSONController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+    <top>
+        <Label alignment="center" text="Welcome to the contacts application!!" BorderPane.alignment="center">
+            <font>
+                <Font name="Times New Roman bold" size="20" />
+            </font>
+            <BorderPane.margin>
+                <Insets bottom="30.0" />
+            </BorderPane.margin>
+        </Label>
+    </top>
+    <center>
+        <HBox maxHeight="500" prefHeight="257.0" prefWidth="5420.0">
+            <BorderPane.margin>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+            </BorderPane.margin>
+            <VBox>
+                <HBox alignment="center">
+                    <Label alignment="center" maxWidth="100" text="First Name:     " />
+                    <TextField fx:id="fname" maxWidth="200" prefHeight="25.0" prefWidth="140.0" />
+                </HBox>
+                <HBox alignment="center">
+                    <Label alignment="center" maxWidth="100" prefHeight="17.0" prefWidth="92.0" text="Second Name:" />
+                    <TextField fx:id="sname" maxWidth="190" prefHeight="25.0" prefWidth="125.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Birthday: " />
+                    <TextField fx:id="birthdayVal" maxWidth="200" prefHeight="25.0" prefWidth="158.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Gender: " />
+                    <TextField fx:id="genderVal" maxWidth="200" prefHeight="25.0" prefWidth="163.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Location: " />
+                    <TextField fx:id="locationVal" maxWidth="200" prefHeight="25.0" prefWidth="155.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Occupation: " />
+                    <TextField fx:id="occupationVal" maxWidth="200" prefHeight="25.0" prefWidth="143.0" />
+                </HBox>
+            </VBox>
+            <VBox prefHeight="257.0" prefWidth="267.0">
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Notes: " />
+                    <TextField fx:id="notesVal" maxWidth="200" prefHeight="25.0" prefWidth="173.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Group: " />
+                    <TextField fx:id="groupVal" maxWidth="200" prefHeight="25.0" prefWidth="171.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="E-mail: " />
+                    <TextField fx:id="e_mailVal" maxWidth="200" prefHeight="25.0" prefWidth="172.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Business mail: " />
+                    <TextField fx:id="e_mailVal2" maxWidth="200" prefHeight="25.0" prefWidth="137.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Phone 1- Type: " />
+                    <TextField fx:id="phoneType1" maxWidth="200" prefHeight="25.0" prefWidth="128.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Phone 1- Value: " />
+                    <TextField fx:id="phoneValue1" maxWidth="200" prefHeight="25.0" prefWidth="125.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Phone 2 – Type: " />
+                    <TextField fx:id="phoneType2" maxWidth="200" prefHeight="25.0" prefWidth="124.0" />
+                </HBox>
+            </VBox>
+            <VBox prefHeight="257.0" prefWidth="270.0">
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Phone 2- Value: " />
+                    <TextField fx:id="phoneValue2" maxWidth="200" prefHeight="25.0" prefWidth="125.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Address – Type: " />
+                    <TextField fx:id="typeAddVal" maxWidth="200" prefHeight="25.0" prefWidth="125.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Address – Street: " />
+                    <TextField fx:id="streetVal" maxWidth="200" prefHeight="25.0" prefWidth="119.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="100" text="Address – City: " />
+                    <TextField fx:id="cityVal" maxWidth="200" prefHeight="25.0" prefWidth="129.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="150" text="Address – Region: " />
+                    <TextField fx:id="regionVAl" maxWidth="200" prefHeight="25.0" prefWidth="112.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="150" text="Address – Country: " />
+                    <TextField fx:id="cuntryVal" maxWidth="200" prefHeight="25.0" prefWidth="107.0" />
+                </HBox>
+            </VBox>
+            <VBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="150" text="Organization-Type: " />
+                    <TextField fx:id="typeOrgVal" maxWidth="200" prefHeight="25.0" prefWidth="108.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="150" text="Organization–Name: " />
+                    <TextField fx:id="nameOrgVal" maxWidth="200" prefHeight="25.0" prefWidth="101.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="150" text="Organization–Location: " />
+                    <TextField fx:id="locationOrgVal" maxWidth="200" prefHeight="25.0" prefWidth="85.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="150" text="Organization-Job Description: " />
+                    <TextField fx:id="jobDescriptionVal" maxWidth="200" prefHeight="25.0" prefWidth="64.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="150" text="Website – Type: " />
+                    <TextField fx:id="websiteTypeVal" maxWidth="200" prefHeight="25.0" prefWidth="129.0" />
+                </HBox>
+                <HBox alignment="center" spacing="10">
+                    <Label alignment="center" maxWidth="150" text="Website – Value: " />
+                    <TextField fx:id="websiteVal" maxWidth="200" prefHeight="25.0" prefWidth="122.0" />
+                </HBox>
+            </VBox>
+
+        </HBox>
+
+    </center>
+
+    <right>
+        <HBox BorderPane.alignment="BOTTOM_CENTER">
+            <children>
+                <ToolBar orientation="VERTICAL">
+                    <items>
+                        <Button onAction="#readSearchFields" prefWidth="52.0" text="Search" />
+                        <Button onAction="#addNewElement" text="Add" />
+                    </items>
+                </ToolBar>
+            </children>
+        </HBox>
+    </right>
+
+    <bottom>
+        <VBox>
+            <children>
+                <Separator nodeOrientation="LEFT_TO_RIGHT" prefWidth="200.0" />
+                <HBox>
+                    <children>
+                        <TextFlow nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="1026.0" textAlignment="CENTER">
+                            <children>
+                                <TextArea fx:id="results" prefHeight="200.0" prefWidth="359.0" text="The results should be shown here ">
+                                    <font>
+                                        <Font name="Times New Roman" size="12.0" />
+                                    </font>
+                                </TextArea>
+                            </children>
+                        </TextFlow>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+
+
+</BorderPane>
